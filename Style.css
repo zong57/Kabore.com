@@ -1,8 +1,9 @@
-/* Style Fusion : Ocean Cyber Moderne */
+
+/* Style Fusion Moderne pour Abdoulk */
 :root {
     --bg: #f0f7f9;           /* Fond bleu très pâle (frais) */
     --header-grad: linear-gradient(90deg, #0077b6, #8e44ad); /* Dégradé Bleu vers Violet */
-    --accent: #e91e63;       /* Rose vif pour le bouton (attire l'œil) */
+    --accent-pink: #e91e63;  /* Rose vif pour les interactions */
     --text-dark: #03045e;    /* Bleu marine profond pour le texte */
     --card-bg: #ffffff;      /* Blanc pur pour les cartes */
 }
@@ -13,59 +14,68 @@ body {
     color: var(--text-dark);
     margin: 0;
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
     background: var(--header-grad);
     color: white;
-    padding: 2rem 1rem;
+    padding: 2.5rem 1rem;
     text-align: center;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-header strong {
-    font-size: 1.5rem;
-    letter-spacing: 2px;
+header nav strong {
+    font-size: 1.8rem;
+    letter-spacing: 3px;
     text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 }
 
 main {
+    flex: 1;
     padding: 20px;
-    max-width: 600px;
+    max-width: 500px;
     margin: 0 auto;
+    width: 90%;
 }
 
 .card {
     background: var(--card-bg);
     padding: 30px;
-    border-radius: 20px; /* Bords très arrondis style moderne */
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-    margin-top: -30px; /* Fait remonter la carte sur le header */
-    border: 1px solid rgba(0,0,0,0.05);
+    border-radius: 25px; /* Bords très arrondis style moderne */
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    margin-top: -40px; /* Fait remonter la carte sur le header */
+    border: 1px solid rgba(255,255,255,0.3);
 }
 
-.btn {
-    display: inline-block;
-    background: var(--accent);
-    color: white;
-    padding: 15px 30px;
-    text-decoration: none;
-    border-radius: 50px; /* Bouton pilule */
-    font-weight: bold;
+h2 {
     text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-    box-shadow: 0 4px 15px rgba(233, 30, 99, 0.4);
+    color: var(--text-dark);
+    margin-bottom: 20px;
 }
 
-.btn:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 20px rgba(233, 30, 99, 0.6);
+p {
+    text-align: center;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+/* Style des boutons (déjà stylisés dans le HTML, mais ceci ajoute l'effet au survol) */
+.btn {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.btn:active {
+    transform: scale(0.95); /* Effet d'appui sur mobile */
 }
 
 footer {
     text-align: center;
-    margin-top: 40px;
     padding: 20px;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     color: #778ca3;
 }
