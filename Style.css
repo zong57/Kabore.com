@@ -1,60 +1,71 @@
-/* Design moderne pour Sidmoma.zn */
+/* Style Fusion : Ocean Cyber Moderne */
 :root {
-    --primary: #0366d6; /* Bleu GitHub */
-    --bg: #f6f8fa;
-    --text: #24292e;
+    --bg: #f0f7f9;           /* Fond bleu très pâle (frais) */
+    --header-grad: linear-gradient(90deg, #0077b6, #8e44ad); /* Dégradé Bleu vers Violet */
+    --accent: #e91e63;       /* Rose vif pour le bouton (attire l'œil) */
+    --text-dark: #03045e;    /* Bleu marine profond pour le texte */
+    --card-bg: #ffffff;      /* Blanc pur pour les cartes */
 }
 
 body {
-    font-family: -apple-system, sans-serif;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     background-color: var(--bg);
-    color: var(--text);
+    color: var(--text-dark);
     margin: 0;
     line-height: 1.6;
 }
 
 header {
-    background: #24292e;
+    background: var(--header-grad);
     color: white;
-    padding: 1.5rem;
+    padding: 2rem 1rem;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+header strong {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 main {
-    padding: 2rem;
-    max-width: 700px;
+    padding: 20px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
 .card {
-    background: white;
-    padding: 25px;
-    border-radius: 12px;
-    border: 1px solid #e1e4e8;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 20px; /* Bords très arrondis style moderne */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    margin-top: -30px; /* Fait remonter la carte sur le header */
+    border: 1px solid rgba(0,0,0,0.05);
 }
 
 .btn {
     display: inline-block;
-    background-color: var(--primary);
+    background: var(--accent);
     color: white;
-    padding: 12px 24px;
+    padding: 15px 30px;
     text-decoration: none;
-    border-radius: 8px;
-    font-weight: 600;
-    transition: 0.3s;
+    border-radius: 50px; /* Bouton pilule */
+    font-weight: bold;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 15px rgba(233, 30, 99, 0.4);
 }
 
 .btn:hover {
-    background-color: #0056b3;
-    transform: translateY(-2px);
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(233, 30, 99, 0.6);
 }
 
 footer {
     text-align: center;
-    padding: 2rem;
-    font-size: 0.85rem;
-    color: #586069;
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 0.8rem;
+    color: #778ca3;
 }
-
