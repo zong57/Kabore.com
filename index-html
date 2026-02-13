@@ -4,13 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Site officiel de Abdoulk - Mes réseaux sociaux">
-    
-    <!-- Sécurité renforcée -->
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    
-    <title>Abdoulk | Mes Réseaux</title>
-
-    <!-- Lien vers ton fichier de style -->
+    <title>Abdoulk | Officiel</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -24,20 +19,27 @@
     <main>
         <section class="content">
             <div class="card">
+                
+                <!-- BLOC PHOTO AJOUTÉ ICI -->
+                <div style="text-align: center; margin-bottom: 20px;">
+                    <img src="profil.jpg" alt="Photo de Abdoulk" 
+                         style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 4px solid #e91e63; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+                </div>
+
                 <h2>Bienvenue chez Abdoulk</h2>
                 <p>Retrouvez-moi sur mes plateformes officielles :</p>
 
-                <!-- Bouton Facebook -->
+                <!-- Facebook -->
                 <a href="https://www.facebook.com" class="btn" target="_blank" rel="noopener noreferrer" style="background: #1877F2; margin-bottom: 15px; display: block; text-decoration: none; color: white; padding: 15px; border-radius: 50px; font-weight: bold; text-align: center;">
                     Facebook
                 </a>
 
-                <!-- Bouton Instagram -->
+                <!-- Instagram -->
                 <a href="https://www.instagram.com" class="btn" target="_blank" rel="noopener noreferrer" style="background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); margin-bottom: 15px; display: block; text-decoration: none; color: white; padding: 15px; border-radius: 50px; font-weight: bold; text-align: center;">
                     Instagram
                 </a>
 
-                <!-- Bouton YouTube -->
+                <!-- YouTube -->
                 <a href="https://www.youtube.com" class="btn" target="_blank" rel="noopener noreferrer" style="background: #FF0000; margin-bottom: 15px; display: block; text-decoration: none; color: white; padding: 15px; border-radius: 50px; font-weight: bold; text-align: center;">
                     YouTube
                 </a>
@@ -46,8 +48,9 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Abdoulk - Créé via GitHub sur Android</p>
+        <p>&copy; 2024 Abdoulk - Design par GitHub sur Android</p>
     </footer>
 
 </body>
 </html>
+
