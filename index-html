@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mon premier site web créé sur Android">
+    
+    <!-- Sécurité : Protection basique -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    
+    <title>Sidmoma | Accueil</title>
+
+    <!-- Lien vers votre fichier de style (à créer aussi) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <strong>Mon Site Mobile</strong>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Bienvenue sur mon site !</h1>
+            <p>Ce site a été entièrement conçu et déployé depuis un appareil <strong>Android</strong> via GitHub.</p>
+            
+            <div class="card">
+                <h3>Mes Projets</h3>
+                <p>C'est ici que je vais afficher mes futures créations.</p>
+                <!-- rel="noopener" est crucial pour la sécurité des liens externes -->
+                <a href="https://github.com" class="btn" target="_blank" rel="noopener noreferrer">
+                    Voir mon profil GitHub
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - Tous droits réservés</p>
+    </footer>
+
+</body>
+</html>
+
