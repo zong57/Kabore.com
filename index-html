@@ -3,42 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mon premier site web créé sur Android">
+    <meta name="description" content="Site officiel de Abdoulk - Mes réseaux sociaux">
     
-    <!-- Sécurité : Protection basique -->
+    <!-- Sécurité renforcée -->
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     
-    <title>Sidmoma | Accueil</title>
+    <title>Abdoulk | Mes Réseaux</title>
 
-    <!-- Lien vers votre fichier de style (à créer aussi) -->
+    <!-- Lien vers ton fichier de style -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
         <nav>
-            <strong>Mon Site Mobile</strong>
+            <strong>ABD_OULK.ZN</strong>
         </nav>
     </header>
 
     <main>
-        <section>
-            <h1>Bienvenue sur mon site !</h1>
-            <p>Ce site a été entièrement conçu et déployé depuis un appareil <strong>Android</strong> via GitHub.</p>
-            
+        <section class="content">
             <div class="card">
-                <h3>Mes Projets</h3>
-                <p>C'est ici que je vais afficher mes futures créations.</p>
-                <!-- rel="noopener" est crucial pour la sécurité des liens externes -->
-                <a href="https://github.com" class="btn" target="_blank" rel="noopener noreferrer">
-                    Voir mon profil GitHub
+                <h2>Bienvenue chez Abdoulk</h2>
+                <p>Retrouvez-moi sur mes plateformes officielles :</p>
+
+                <!-- Bouton Facebook -->
+                <a href="https://www.facebook.com" class="btn" target="_blank" rel="noopener noreferrer" style="background: #1877F2; margin-bottom: 15px; display: block; text-decoration: none; color: white; padding: 15px; border-radius: 50px; font-weight: bold; text-align: center;">
+                    Facebook
+                </a>
+
+                <!-- Bouton Instagram -->
+                <a href="https://www.instagram.com" class="btn" target="_blank" rel="noopener noreferrer" style="background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); margin-bottom: 15px; display: block; text-decoration: none; color: white; padding: 15px; border-radius: 50px; font-weight: bold; text-align: center;">
+                    Instagram
+                </a>
+
+                <!-- Bouton YouTube -->
+                <a href="https://www.youtube.com" class="btn" target="_blank" rel="noopener noreferrer" style="background: #FF0000; margin-bottom: 15px; display: block; text-decoration: none; color: white; padding: 15px; border-radius: 50px; font-weight: bold; text-align: center;">
+                    YouTube
                 </a>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 - Tous droits réservés</p>
+        <p>&copy; 2024 Abdoulk - Créé via GitHub sur Android</p>
     </footer>
 
 </body>
