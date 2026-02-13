@@ -1,4 +1,4 @@
-/* Style Fusion Moderne pour Abdoulk *
+/* Style Fusion Moderne pour Abdoulk */
 :root {
     --bg: #f0f7f9;           /* Fond bleu très pâle (frais) */
     --header-grad: linear-gradient(90deg, #0077b6, #8e44ad); /* Dégradé Bleu vers Violet */
@@ -44,9 +44,9 @@ main {
 .card {
     background: var(--card-bg);
     padding: 30px;
-    border-radius: 25px; /* Bords très arrondis style moderne */
+    border-radius: 25px;
     box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-    margin-top: -40px; /* Fait remonter la carte sur le header */
+    margin-top: -40px;
     border: 1px solid rgba(255,255,255,0.3);
 }
 
@@ -54,6 +54,7 @@ h2 {
     text-align: center;
     color: var(--text-dark);
     margin-bottom: 20px;
+    font-size: 2rem;
 }
 
 p {
@@ -62,14 +63,18 @@ p {
     margin-bottom: 25px;
 }
 
-/* Style des boutons (déjà stylisés dans le HTML, mais ceci ajoute l'effet au survol) */
 .btn {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
 .btn:active {
-    transform: scale(0.95); /* Effet d'appui sur mobile */
+    transform: scale(0.95);
 }
 
 footer {
@@ -77,4 +82,19 @@ footer {
     padding: 20px;
     font-size: 0.85rem;
     color: #778ca3;
+}
+
+/* Responsive Mobile */
+@media (max-width: 480px) {
+    header nav strong {
+        font-size: 1.4rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .card {
+        padding: 20px;
+    }
 }
