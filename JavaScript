@@ -1,33 +1,50 @@
 /* ============================================================
-   CONFIG DES DONNÉES D'ABDOULK
+   CONFIG PERSONNELLE D'ABDOULK DIODOI
    ============================================================ */
 const myConfig = {
     user: "nes.zon36",
     host: "gmail.com",
     phone: "+226 07 85 71 89",
-    orangeLink: "https://votre-lien-orange.com",
+    // LIEN WHATSAPP POUR LE PAIEMENT (MÉTHODE DIRECTE)
+    orangeLink: "https://wa.me.",
     shareText: "Regarde le site officiel de Abdoulk Diodoi ! 🔥 "
 };
 
 /* --- AFFICHAGE SÉCURISÉ --- */
 window.onload = () => {
     const fullEmail = myConfig.user + "@" + myConfig.host;
-    document.getElementById('mon-email').innerHTML = `<a href="mailto:${fullEmail}">${fullEmail}</a>`;
-    document.getElementById('mon-tel').innerHTML = `<a href="tel:${myConfig.phone.replace(/\s/g, '')}">${myConfig.phone}</a>`;
+    const emailElement = document.getElementById('mon-email');
+    const telElement = document.getElementById('mon-tel');
+
+    if(emailElement) {
+        emailElement.innerHTML = `<a href="mailto:${fullEmail}" style="color:#e91e63; font-weight:bold; text-decoration:none;">${fullEmail}</a>`;
+    }
+    if(telElement) {
+        telElement.innerHTML = `<a href="tel:${myConfig.phone.replace(/\s/g, '')}" style="color:#e91e63; font-weight:bold; text-decoration:none;">${myConfig.phone}</a>`;
+    }
 };
 
-/* --- PAIEMENT ORANGE MONEY --- */
+/* --- FONCTION PAIEMENT (Redirige vers ton WhatsApp) --- */
 function payerOrange() {
-    window.location.href = myConfig.orangeLink;
+    if(confirm("Voulez-vous contacter Abdoulk pour régler par Orange Money ?")) {
+        window.location.href = myConfig.orangeLink;
+    }
 }
 
 /* --- VIRALITÉ WHATSAPP --- */
 function partagerWA() {
-    window.open(`https://api.whatsapp.com{encodeURIComponent(myConfig.shareText + window.location.href)}`);
+    const currentUrl = window.location.href;
+    window.open(`https://api.whatsapp.com{encodeURIComponent(myConfig.shareText + currentUrl)}`, '_blank');
 }
 
-/* --- INSTALLATION APP --- */
+/* --- INSTALLATION APP (PWA) --- */
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('sw.js');
 }
 
+// Invitation VIP automatique (15 sec)
+setTimeout(() => {
+    if(confirm("Rejoignez mon groupe VIP sur WhatsApp !")) {
+        window.location.href = "https://wa.me";
+    }
+}, 15000);
