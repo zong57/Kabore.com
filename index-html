@@ -72,7 +72,22 @@
         // Code pour enregistrer l'application sur le téléphone
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('sw.js');
-        }
+            <!-- Gardez votre code actuel au-dessus -->
+
+    <script>
+        // Ce code s'ajoutera à votre site sans effacer le reste
+        console.log("Le script est bien activé !");
+
+        // Exemple : si vous voulez qu'un clic sur n'importe quel bouton 
+        // de votre site affiche une alerte, ajoutez ceci :
+        document.querySelectorAll('button').forEach(btn => {
+            btn.addEventListener('click', () => {
+                alert("Vous avez cliqué sur un bouton de votre site existant !");
+            });
+        });
+    </script>
+</body>
+}
     </script>
 </body>
 </html>
