@@ -28,8 +28,11 @@
     <meta charset="UTF-8">
     <title>ABDOULK DIODOI | OFFICIEL</title>
 
+ <meta name="google-adsense-account" content="ca-pub-2088689215228427">
+
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2088689215228427"
      crossorigin="anonymous"></script>
+<script async src="https://pagead2.googlesyndication.com" crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -81,6 +84,7 @@
 
     <footer style="margin: 40px 0; font-size: 0.8rem; color: #777;">
         &copy; 2024 ABDOULK DIODOI - Tous droits réservés
+
     </footer>
 
     <!-- 5. LIAISON DU CERVEAU (SCRIPT.JS) -->
@@ -88,3 +92,4 @@
 
 </body>
 </html>
+
