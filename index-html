@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="style.css">
     <!-- Lien complet pour les icônes FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
+    <link rel="manifest" href="manifest.json">
+
 </head>
 <body>
 
