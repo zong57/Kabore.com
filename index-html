@@ -176,6 +176,13 @@
     <!-- Bouton Facebook -->
     <a href="https://www.facebook.com" target="_blank" class="btn-share fb">Facebook</a>
 </div>
+<script>
+    setTimeout(function() {
+        if(confirm("Ce site vous plaît ? Partagez-le avec vos amis sur WhatsApp !")) {
+            window.open("https://api.whatsapp.com voir ce site : " + window.location.href);
+        }
+    }, 10000); // 10000 millisecondes = 10 secondes
+</script>
 
 
             });
