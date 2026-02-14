@@ -1,42 +1,41 @@
-const CACHE_NAME = 'abdoulk-diodoi-v1';
+/* ============================================================
+   SERVICE WORKER - ABDOULK DIODOI (OFFICIEL)
+   ============================================================ */
 
-// Liste des fichiers à mettre en cache (tous à la racine)
-const ASSETS = [
+const CACHE_NAME = 'abdoulk-app-v1';
+// Liste des fichiers à garder en mémoire (cache)
+const ASSETS_TO_CACHE = [
   './',
-  'index.html',
-  'style.css',
-  'script.js',
-  'profil.jpg',
-  'manifest.json'
+  './index.html',
+  './manifest.json',
+  './profil.jpg' // Ton icône
 ];
 
-// INSTALLATION : On télécharge les fichiers dans la mémoire du téléphone
+// Installation : Mise en cache des fichiers
 self.addEventListener('install', (event) => {
-  console.log('Service Worker : Installation en cours...');
   event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then((cache) => {
-        console.log('Service Worker : Mise en cache des fichiers');
-        return cache.addAll(ASSETS);
-      })
-      .then(() => self.skipWaiting())
+    caches.open(CACHE_NAME).then((cache) => {
+      return cache.addAll(ASSETS_TO_CACHE);
+    })
   );
 });
 
-// ACTIVATION : On prend le contrôle immédiatement
+// Activation : Nettoyage des anciens caches
 self.addEventListener('activate', (event) => {
-  console.log('Service Worker : Activé et prêt !');
-  event.waitUntil(self.clients.claim());
+  event.waitUntil(
+    caches.keys().then((keys) => {
+      return Promise.all(
+        keys.filter(key => key !== CACHE_NAME).map(key => caches.delete(key))
+      );
+    })
+  );
 });
 
-// RÉCUPÉRATION (FETCH) : On affiche les fichiers du cache si on est hors-ligne
+// Stratégie réseau : Charge le cache, sinon le réseau
 self.addEventListener('fetch', (event) => {
   event.respondWith(
-    caches.match(event.request)
-      .then((response) => {
-        // Retourne le fichier du cache, sinon va le chercher sur internet
-        return response || fetch(event.request);
-      })
+    caches.match(event.request).then((response) => {
+      return response || fetch(event.request);
+    })
   );
 });
-
