@@ -1,6 +1,44 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mon Site Sécurisé</title>
+
+    <!-- 1. CODE APERÇU (Réseaux Sociaux) -->
+    <meta property="og:title" content="Bienvenue sur mon site">
+    <meta property="og:description" content="Découvrez mes services en toute sécurité.">
+    <meta property="og:image" content="https://votre-site.com">
+    <meta property="og:type" content="website">
+</head>
+<body>
+
+    <h1>Contactez-moi</h1>
+    
+    <!-- 2. EMPLACEMENT DES COORDONNÉES (Cachées au début) -->
+    <p>Email : <span id="nes.zon36@gmail.com">Affichage en cours...</span></p>
+    <p>Tél : <span "07857189">Affichage en cours...</span></p>
+
+    <!-- 3. LE CERVEAU JAVASCRIPT (Juste avant la fin du body) -->
+    <script>
+        // Script pour l'email
+        const user = "Abdoulk Diodoi";
+        const domain = "nes.zon36@gmail.com";
+        const emailBox = document.getElementById('mon-email');
+        emailBox.innerHTML = '<a href="mailto:' + user + '@' + domain + '">' + user + '@' + domain + '</a>';
+
+        // Script pour le téléphone
+        const prefixe = "06";
+        const suite = " 11 22 33 44";
+        const telBox = document.getElementById('mon-tel');
+        telBox.innerHTML = '<a href="tel:' + prefixe + suite.replace(/\s/g, '') + '">' + prefixe + suite + '</a>';
+    </script>
+
+</body>
+</html>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ABDOULK DIODOI | OFFICIEL</title>
