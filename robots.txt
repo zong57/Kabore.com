@@ -1,4 +1,4 @@
-# Autoriser spécifiquement le robot Google AdSense
+# Autoriser spécifiquement le robot Google AdSense (Priorité n°1)
 User-agent: Mediapartners-Google
 Disallow:
 
@@ -9,5 +9,5 @@ Allow: /wp-admin/admin-ajax.php
 Disallow: /trackback/
 Disallow: /xmlrpc.php
 
-# Indiquer l'emplacement de votre sitemap pour faciliter l'indexation
-Sitemap: https://splendorous-daifuku-4d77550s.netlify.app/
+# Indiquer l'emplacement exact de votre sitemap (CORRIGÉ)
+Sitemap: https://splendorous-daifuku-4d77550s.netlify.app
