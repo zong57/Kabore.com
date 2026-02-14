@@ -3,92 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABDOULK DIODOI | MULTI-SOCIAL</title>
-    
-    <!-- Icônes FontAwesome pour un look pro -->
+    <title>ABDOULK DIODOI | OFFICIEL</title>
+
+    <!-- 1. MONÉTISATION GOOGLE ADSENSE (TON CODE OFFICIEL) -->
+    <script async src="https://pagead2.googlesyndication.com" crossorigin="anonymous"></script>
+    <meta name="google-adsense-account" content="ca-pub-2088689215228427">
+
+    <!-- 2. RÉFÉRENCEMENT & APERÇU (TON IDENTITÉ) -->
+    <meta name="description" content="Site officiel de Abdoulk Diodoi. Contact : +226 07 85 71 89.">
+    <meta property="og:title" content="ABDOULK DIODOI | OFFICIEL">
+    <meta property="og:description" content="Rejoignez mon univers : Vidéos, VIP et Paiements Orange Money.">
+    <meta property="og:image" content="profil.jpg">
+    <meta property="og:url" content="https://votre-site.netlify.app">
+    <meta property="og:type" content="website">
+
+    <!-- 3. CONFIGURATION APP (PWA) -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="profil.jpg">
+
+    <!-- 4. LIAISON STYLE & ICÔNES -->
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
-
-    <style>
-        :root {
-            --bg: #f0f7f9;
-            --header-grad: linear-gradient(90deg, #0077b6, #8e44ad);
-            --card-bg: #ffffff;
-            --text-dark: #03045e;
-        }
-
-        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); margin: 0; text-align: center; color: var(--text-dark); }
-        header { background: var(--header-grad); color: white; padding: 2rem 1rem; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-        main { padding: 20px; max-width: 500px; margin: 0 auto; }
-        
-        .card { background: var(--card-bg); padding: 25px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); margin-top: -30px; }
-        .profile-img { width: 100px; height: 100px; border-radius: 50%; border: 4px solid white; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
-
-        /* BOUTONS SOCIAUX COLORÉS */
-        .btn-link { display: flex; align-items: center; justify-content: center; padding: 14px; margin: 10px 0; color: white; text-decoration: none; border-radius: 12px; font-weight: bold; transition: 0.3s; gap: 10px; border: none; cursor: pointer; width: 100%; font-size: 1rem; }
-        .btn-link:active { transform: scale(0.96); }
-
-        .insta { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
-        .yt { background: #FF0000; }
-        .tg { background: #0088cc; }
-        .opera { background: #FF1B2D; }
-        .yayo { background: #6c5ce7; } /* Couleur personnalisée pour Yayo */
-        .om { background: #ff6600; }
-        .wa { background: #25D366; }
-
-        .info-sec { background: #f8f9fa; padding: 10px; border-radius: 10px; margin: 15px 0; font-size: 0.9rem; }
-    </style>
-<meta name="google-adsense-account" content="ca-pub-2088689215228427">
 </head>
 <body>
 
-<header>
-    <strong>ABD_OULK.PRO</strong>
-</header>
+    <header>
+        <nav><strong>ABD_OULK.PRO</strong></nav>
+    </header>
 
-<main>
-    <div class="card">
-        <img src="profil.jpg" alt="Abdoulk" class="profile-img">
-        <h2 style="margin: 10px 0;">Abdoulk Diodoi</h2>
-        <div style="background:#03045e; color:white; display:inline-block; padding:3px 10px; border-radius:15px; font-size:12px; margin-bottom:15px;">CERTIFIÉ</div>
+    <main>
+        <!-- CARTE DE PROFIL -->
+        <section class="card">
+            <img src="profil.jpg" alt="Abdoulk Diodoi" class="profile-img">
+            <h2 style="color: #03045e;">Abdoulk Diodoi</h2>
+            <div style="background:#03045e; color:white; padding:5px 12px; border-radius:20px; font-size:12px; display:inline-block; margin-bottom:15px;">CERTIFIÉ OFFICIEL</div>
+            
+            <!-- COORDONNÉES AFFICHÉES -->
+            <div style="margin-top: 20px; background: #f9f9f9; padding: 15px; border-radius: 15px; border: 1px solid #ddd;">
+                <p style="margin:5px 0;">📧 Email : <span id="mon-email">nes.zon36@gmail.com</span></p>
+                <p style="margin:5px 0;">📞 Tél : <span id="mon-tel">+226 07 85 71 89</span></p>
+            </div>
+        </section>
 
-        <div class="info-sec">
-            Email : <span id="mon-email">...</span><br>
-            Tél : <span id="mon-tel">...</span>
+        <!-- BOUTONS D'ACTION -->
+        <section class="card">
+            <button onclick="payerOrange()" class="btn-link om">
+                <i class="fa-solid fa-money-bill-transfer"></i> PAYER ORANGE MONEY
+            </button>
+            
+            <a href="https://www.youtube.com" class="btn-link yt" target="_blank">
+                <i class="fa-brands fa-youtube"></i> YOUTUBE OFFICIEL
+            </a>
+            
+            <a href="https://t.me" class="btn-link tg" target="_blank">
+                <i class="fa-brands fa-telegram"></i> MON TELEGRAM
+            </a>
+
+            <a href="https://www.instagram.com" class="btn-link insta" target="_blank">
+                <i class="fa-brands fa-instagram"></i> MON INSTAGRAM
+            </a>
+        </section>
+
+        <!-- VIRALITÉ -->
+        <div style="margin-top:30px;">
+            <button onclick="partagerWA()" class="btn-link wa">
+                <i class="fa-brands fa-whatsapp"></i> PARTAGER SUR WHATSAPP
+            </button>
         </div>
+    </main>
 
-        <!-- PAIEMENT -->
-        <button onclick="payer()" class="btn-link om"><i class="fa-solid fa-money-bill-transfer"></i> PAYER ORANGE MONEY</button>
+    <footer style="margin: 40px 0; font-size: 0.8rem; color: #777;">
+        &copy; 2024 ABDOULK DIODOI - Tous droits réservés
+    </footer>
 
-        <!-- RÉSEAUX SOCIAUX -->
-        <a href="https://instagram.com" class="btn-link insta"><i class="fa-brands fa-instagram"></i> INSTAGRAM</a>
-        <a href="https://youtube.com" class="btn-link yt"><i class="fa-brands fa-youtube"></i> YOUTUBE</a>
-        <a href="https://t.me" class="btn-link tg"><i class="fa-brands fa-telegram"></i> TELEGRAM</a>
-        <a href="https://www.opera.com" class="btn-link opera"><i class="fa-brands fa-opera"></i> OPERA MINI</a>
-        <a href="#" class="btn-link yayo"><i class="fa-solid fa-star"></i> YAYO OFFICIAL</a>
-    </div>
-
-    <div style="margin-top:20px; background:white; padding:15px; border-radius:15px;">
-        <button onclick="partager()" class="btn-link wa"><i class="fa-brands fa-whatsapp"></i> PARTAGER SUR WHATSAPP</button>
-    </div>
-</main>
-
-<script>
-    const myData = {
-        user: "nes.zon36",
-        host: "gmail.com",
-        phone: "+226 07 85 71 89"
-    };
-
-    window.onload = () => {
-        const fullMail = myData.user + "@" + myData.host;
-        document.getElementById('mon-email').innerHTML = `<a href="mailto:${fullMail}">${fullMail}</a>`;
-        document.getElementById('mon-tel').innerHTML = `<a href="tel:${myData.phone.replace(/\s/g, '')}">${myData.phone}</a>`;
-    };
-
-    function payer() { alert("Lancement d'Orange Money..."); }
-    function partager() { window.open("https://api.whatsapp.com ce site : " + window.location.href); }
-</script>
+    <!-- 5. LIAISON DU CERVEAU (SCRIPT.JS) -->
+    <script src="script.js"></script>
 
 </body>
 </html>
-
