@@ -30,6 +30,9 @@
     <meta name="twitter:title" content="Titre de votre site">
     <meta name="twitter:description" content="Description courte pour Twitter.">
     <meta name="twitter:image" content="https://www.votre-site.comimage-apercu.jpg">
+        <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#007bff">
+<link rel="apple-touch-icon" href="logo192.png">
 
 
 </head>
