@@ -21,6 +21,15 @@
     <!-- Votre code AdSense ressemble à ceci (exemple) -->
     <script async src="https://pagead2.googlesyndication.com"
      crossorigin="anonymous"></script>
+<!-- Remplacez "ca-pub-XXXXXXXXXXXXXXXX" par votre identifiant AdSense réel -->
+<script async src="https://pagead2.googlesyndication.com"
+     crossorigin="anonymous"></script>
+
+<!-- Ce code active les "Annonces automatiques" de Google -->
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 </head>
 <body>
 
