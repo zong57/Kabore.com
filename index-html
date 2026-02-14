@@ -17,6 +17,10 @@
 <meta name="geo.region" content="FR, SN, CI, ML"> <!-- Vos zones cibles (France, Sénégal, etc.) -->
 <meta name="author" content="VOTRE NOM">
 <link rel="canonical" href="https://votre-site.com">
+
+    <!-- Votre code AdSense ressemble à ceci (exemple) -->
+    <script async src="https://pagead2.googlesyndication.com"
+     crossorigin="anonymous"></script>
 </head>
 <body>
 
