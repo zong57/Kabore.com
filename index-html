@@ -72,10 +72,6 @@
 <meta name="theme-color" content="#007bff">
 <link rel="apple-touch-icon" href="logo192.png">
 
-
-</head>
-<body>
-
     <header class="animate__animated animate__fadeInDown">
         <nav><strong>ABD_OULK.PRO</strong></nav>
     </header>
@@ -143,6 +139,27 @@
         document.querySelectorAll('button').forEach(btn => {
             btn.addEventListener('click', () => {
                 alert("Vous avez cliqué sur un bouton de votre site existant !");
+            
+
+
+    <title>Mon Site</title>
+    <!-- Vos balises Meta d'aperçu vont ici -->
+</head>
+<body>
+
+    <!-- Tout le contenu de votre site (textes, images, etc.) -->
+    <h1>Contactez-moi</h1>
+    <p>Email : <span id="mon-email">Chargement...</span></p>
+    <script>
+        const user = "Abdoulk Diodoi";
+        const domain = "nes.zon36@gmail.com";
+        document.getElementById('mon-email').innerHTML = user + "@" + domain;
+    </script>
+    
+
+</body>
+</html>
+
             });
         });
     </script>
