@@ -13,6 +13,25 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Informations de base -->
+    <title>Nom de votre Site</title>
+    <meta name="description" content="Une phrase courte qui décrit votre site.">
+
+    <!-- Configuration pour les réseaux sociaux (Open Graph) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.votre-site.com">
+    <meta property="og:title" content="Titre accrocheur de votre site">
+    <meta property="og:description" content="Description qui apparaîtra sous le titre lors du partage.">
+    <meta property="og:image" content="https://www.votre-site.comimage-apercu.jpg">
+
+    <!-- Configuration spécifique pour Twitter/X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Titre de votre site">
+    <meta name="twitter:description" content="Description courte pour Twitter.">
+    <meta name="twitter:image" content="https://www.votre-site.comimage-apercu.jpg">
+
+
 </head>
 <body>
 
