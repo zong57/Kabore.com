@@ -1,10 +1,10 @@
 /* Style Fusion Moderne pour Abdoulk */
 :root {
-    --bg: #f0f7f9;           /* Fond bleu très pâle (frais) */
-    --header-grad: linear-gradient(90deg, #0077b6, #8e44ad); /* Dégradé Bleu vers Violet */
-    --accent-pink: #e91e63;  /* Rose vif pour les interactions */
-    --text-dark: #03045e;    /* Bleu marine profond pour le texte */
-    --card-bg: #ffffff;      /* Blanc pur pour les cartes */
+    --bg: #f0f7f9;           
+    --header-grad: linear-gradient(90deg, #0077b6, #8e44ad); 
+    --accent-pink: #e91e63;  
+    --text-dark: #03045e;    
+    --card-bg: #ffffff;      
 }
 
 body {
@@ -46,54 +46,12 @@ main {
     padding: 30px;
     border-radius: 25px;
     box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-    margin-top: -40px;
+    margin-top: -40px; /* Effet de chevauchement sur le header */
     border: 1px solid rgba(255,255,255,0.3);
 }
 
-h2 {
-    text-align: center;
-    color: var(--text-dark);
-    margin-bottom: 20px;
-    font-size: 2rem;
-}
-
-p {
-    text-align: center;
-    color: #555;
-    margin-bottom: 25px;
-}
-
-.btn {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-
-.btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-}
-
-.btn:active {
-    transform: scale(0.95);
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    font-size: 0.85rem;
-    color: #778ca3;
-}
-
-/* Responsive Mobile */
-@media (max-width: 480px) {
-    header nav strong {
-        font-size: 1.4rem;
-    }
-    
-    h2 {
-        font-size: 1.5rem;
-    }
-    .share-container {
+/* --- BOUTONS DE PARTAGE (VIRALITÉ) --- */
+.share-container {
     text-align: center;
     margin: 20px 0;
     padding: 15px;
@@ -113,12 +71,28 @@ footer {
     transition: transform 0.2s;
 }
 
-.btn-share:active { transform: scale(0.9); } /* Effet tactile quand on appuie */
+.btn-share:active { transform: scale(0.9); }
+.wa { background-color: #25D366; } 
+.fb { background-color: #1877F2; }
 
-.wa { background-color: #25D366; } /* Couleur WhatsApp */
-.fb { background-color: #1877F2; } /* Couleur Facebook */
-        
+/* --- RESPONSIVE MOBILE --- */
+@media (max-width: 480px) {
+    header nav strong {
+        font-size: 1.4rem;
+    }
+    header {
+        padding: 1.5rem 1rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
     .card {
         padding: 20px;
+        margin-top: -20px;
+    }
+    .btn-share {
+        display: block; /* Les boutons prennent toute la largeur sur mobile */
+        width: 100%;
+        box-sizing: border-box;
     }
 }
