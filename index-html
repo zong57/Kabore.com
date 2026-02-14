@@ -24,6 +24,18 @@
     <!-- 4. LIAISON STYLE & ICÔNES -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
+    <!-- Ne touche pas à ce qui est déjà là (Title, Charset, Viewport) -->
+    <meta charset="UTF-8">
+    <title>ABDOULK DIODOI | OFFICIEL</title>
+
+    <!-- ↓↓↓ COLLE TES CODES ICI (ENTRE LES DEUX MURS) ↓↓↓ -->
+    <meta name="google-adsense-account" content="ca-pub-2088689215228427">
+    <script async src="https://pagead2.googlesyndication.com" crossorigin="anonymous"></script>
+    <!-- ↑↑↑ FIN DU COLLAGE ↑↑↑ -->
+
+    <link rel="stylesheet" href="style.css">
+</head> <!-- C'est le mur de fermeture, laisse-le là -->
+
 </head>
 <body>
 
