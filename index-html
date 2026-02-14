@@ -3,106 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABDOULK DIODOI | OFFICIEL</title>
+    <title>ABDOULK DIODOI | MULTI-SOCIAL</title>
     
-    <!-- 1. RÉFÉRENCEMENT & APERÇU RÉSEAUX SOCIAUX -->
-    <meta name="description" content="Bienvenue sur le site officiel de Abdoulk Diodoi. Vidéos, Live et VIP.">
-    <meta property="og:title" content="ABDOULK DIODOI | OFFICIEL">
-    <meta property="og:description" content="Rejoignez mon univers : Vidéos, Comédie, et accès VIP.">
-    <meta property="og:image" content="https://www.votre-site.com">
-    <meta property="og:type" content="website">
-    <meta name="theme-color" content="#e91e63">
+    <!-- Icônes FontAwesome pour un look pro -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
 
-    <!-- 2. PUBS GOOGLE ADSENSE (Remplacez ca-pub-XXX par le vôtre plus tard) -->
-    <script async src="https://pagead2.googlesyndication.com" crossorigin="anonymous"></script>
-
-    <!-- 3. STYLE CSS (Design & Viralité) -->
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background: #f0f2f5; text-align: center; }
-        .card { background: white; margin: 20px auto; padding: 20px; max-width: 500px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-        .profile-img { width: 120px; height: 120px; border-radius: 50%; border: 5px solid #e91e63; }
-        .btn-explosif { display: block; padding: 15px; margin: 10px 0; color: white; text-decoration: none; border-radius: 10px; font-weight: bold; transition: 0.3s; }
-        .yt { background: #FF0000; } .wa { background: #25D366; } .fb { background: #1877F2; }
-        .share-container { background: #fff; padding: 15px; border-top: 3px solid #ff6600; }
-        .badge { background: #03045e; color: white; padding: 5px 10px; border-radius: 20px; display: inline-block; font-size: 12px; }
-        .video-container iframe { width: 100%; height: 250px; border-radius: 10px; border: none; }
+        :root {
+            --bg: #f0f7f9;
+            --header-grad: linear-gradient(90deg, #0077b6, #8e44ad);
+            --card-bg: #ffffff;
+            --text-dark: #03045e;
+        }
+
+        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); margin: 0; text-align: center; color: var(--text-dark); }
+        header { background: var(--header-grad); color: white; padding: 2rem 1rem; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        main { padding: 20px; max-width: 500px; margin: 0 auto; }
+        
+        .card { background: var(--card-bg); padding: 25px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); margin-top: -30px; }
+        .profile-img { width: 100px; height: 100px; border-radius: 50%; border: 4px solid white; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+
+        /* BOUTONS SOCIAUX COLORÉS */
+        .btn-link { display: flex; align-items: center; justify-content: center; padding: 14px; margin: 10px 0; color: white; text-decoration: none; border-radius: 12px; font-weight: bold; transition: 0.3s; gap: 10px; border: none; cursor: pointer; width: 100%; font-size: 1rem; }
+        .btn-link:active { transform: scale(0.96); }
+
+        .insta { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+        .yt { background: #FF0000; }
+        .tg { background: #0088cc; }
+        .opera { background: #FF1B2D; }
+        .yayo { background: #6c5ce7; } /* Couleur personnalisée pour Yayo */
+        .om { background: #ff6600; }
+        .wa { background: #25D366; }
+
+        .info-sec { background: #f8f9fa; padding: 10px; border-radius: 10px; margin: 15px 0; font-size: 0.9rem; }
     </style>
 </head>
 <body>
 
-    <header style="background:#e91e63; color:white; padding:15px;">
-        <strong>ABD_OULK.PRO</strong>
-    </header>
+<header>
+    <strong>ABD_OULK.PRO</strong>
+</header>
 
-    <main>
-        <!-- PROFIL -->
-        <section class="card">
-            <img src="profil.jpg" alt="Abdoulk Diodoi" class="profile-img">
-            <h2>Abdoulk Diodoi</h2>
-            <div class="badge">CERTIFIÉ OFFICIEL</div>
-            
-            <!-- COORDONNÉES SÉCURISÉES -->
-            <div style="margin-top: 20px; background: #f9f9f9; padding: 10px; border-radius: 10px;">
-                <p>Email : <span id="mon-email" style="font-weight:bold; color:#e91e63;">Chargement...</span></p>
-                <p>Tél : <span id="mon-tel" style="font-weight:bold; color:#e91e63;">Chargement...</span></p>
-            </div>
-        </section>
+<main>
+    <div class="card">
+        <img src="profil.jpg" alt="Abdoulk" class="profile-img">
+        <h2 style="margin: 10px 0;">Abdoulk Diodoi</h2>
+        <div style="background:#03045e; color:white; display:inline-block; padding:3px 10px; border-radius:15px; font-size:12px; margin-bottom:15px;">CERTIFIÉ</div>
 
-        <!-- LIVE VIDEO -->
-        <section class="card">
-            <h3 style="color: #FF0000;">🎥 DERNIER LIVE</h3>
-            <div class="video-container">
-                <iframe src="https://www.youtube.com"></iframe>
-            </div>
-        </section>
-
-        <!-- ABONNEMENTS -->
-        <section class="card">
-            <a href="https://www.youtube.com" class="btn-explosif yt">S'ABONNER SUR YOUTUBE</a>
-            <a href="https://wa.me" class="btn-explosif wa">REJOINDRE LE VIP WHATSAPP</a>
-            <button onclick="payerOrange()" class="btn-explosif" style="background:#ff6600; width:100%; border:none; cursor:pointer;">PAYER VIA ORANGE MONEY</button>
-        </section>
-
-        <!-- VIRALITÉ : BOUTONS DE PARTAGE -->
-        <div class="share-container">
-            <p>🚀 Partagez ce site pour me soutenir !</p>
-            <a href="https://api.whatsapp.com le site officiel de Abdoulk Diodoi ! 🔥 " id="share-wa" target="_blank" class="btn-explosif wa">PARTAGER SUR WHATSAPP</a>
+        <div class="info-sec">
+            Email : <span id="mon-email">...</span><br>
+            Tél : <span id="mon-tel">...</span>
         </div>
-    </main>
 
-    <!-- 4. JAVASCRIPT (SÉCURITÉ & ACTIONS) -->
-    <script>
-        // --- SÉCURITÉ EMAIL & TEL ---
-        window.onload = function() {
-            const user = "nes.zon36"; // Votre pseudo mail
-            const domain = "gmail.com";
-            const tel = "+226 07 85 71 89"; // Votre numéro
+        <!-- PAIEMENT -->
+        <button onclick="payer()" class="btn-link om"><i class="fa-solid fa-money-bill-transfer"></i> PAYER ORANGE MONEY</button>
 
-            document.getElementById('mon-email').innerHTML = `<a href="mailto:${user}@${domain}">${user}@${domain}</a>`;
-            document.getElementById('mon-tel').innerHTML = `<a href="tel:${tel.replace(/\s/g, '')}">${tel}</a>`;
-            
-            // Mise à jour automatique du lien de partage avec l'URL actuelle
-            document.getElementById('share-wa').href += window.location.href;
-        };
+        <!-- RÉSEAUX SOCIAUX -->
+        <a href="https://instagram.com" class="btn-link insta"><i class="fa-brands fa-instagram"></i> INSTAGRAM</a>
+        <a href="https://youtube.com" class="btn-link yt"><i class="fa-brands fa-youtube"></i> YOUTUBE</a>
+        <a href="https://t.me" class="btn-link tg"><i class="fa-brands fa-telegram"></i> TELEGRAM</a>
+        <a href="https://www.opera.com" class="btn-link opera"><i class="fa-brands fa-opera"></i> OPERA MINI</a>
+        <a href="#" class="btn-link yayo"><i class="fa-solid fa-star"></i> YAYO OFFICIAL</a>
+    </div>
 
-        // --- PAIEMENT ORANGE MONEY ---
-        function payerOrange() {
-            const montant = "5000"; 
-            alert("Redirection vers le paiement Orange Money (" + montant + " FCFA)...");
-            window.location.href = "https://votre-lien-marchand-orange.com";
-        }
+    <div style="margin-top:20px; background:white; padding:15px; border-radius:15px;">
+        <button onclick="partager()" class="btn-link wa"><i class="fa-brands fa-whatsapp"></i> PARTAGER SUR WHATSAPP</button>
+    </div>
+</main>
 
-        // --- VIRALITÉ (POPUP APRÈS 15 SECONDES) ---
-        setTimeout(function() {
-            if(confirm("Voulez-vous rejoindre la communauté VIP sur WhatsApp ?")) {
-                window.location.href = "https://wa.me";
-            }
-        }, 15000);
+<script>
+    const myData = {
+        user: "nes.zon36",
+        host: "gmail.com",
+        phone: "+226 07 85 71 89"
+    };
 
-        // --- PWA (INSTALLATION MOBILE) ---
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('sw.js');
-        }
-    </script>
+    window.onload = () => {
+        const fullMail = myData.user + "@" + myData.host;
+        document.getElementById('mon-email').innerHTML = `<a href="mailto:${fullMail}">${fullMail}</a>`;
+        document.getElementById('mon-tel').innerHTML = `<a href="tel:${myData.phone.replace(/\s/g, '')}">${myData.phone}</a>`;
+    };
+
+    function payer() { alert("Lancement d'Orange Money..."); }
+    function partager() { window.open("https://api.whatsapp.com ce site : " + window.location.href); }
+</script>
+
 </body>
 </html>
+
