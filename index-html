@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ABDOULK DIODOI | OFFICIEL</title>
 
-    <!-- 1. MONÉTISATION GOOGLE ADSENSE (TON CODE OFFICIEL) -->
-    <script async src="https://pagead2.googlesyndication.com" crossorigin="anonymous"></script>
+    <!-- GOOGLE ADSENSE -->
+    <meta name="google-adsense-account" content="ca-pub-2088689215228427">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2088689215228427" crossorigin="anonymous"></script>
 
-    <!-- 2. RÉFÉRENCEMENT & APERÇU (TON IDENTITÉ) -->
+    <!-- RÉFÉRENCEMENT & APERÇU -->
     <meta name="description" content="Site officiel de Abdoulk Diodoi. Contact : +226 07 85 71 89.">
     <meta property="og:title" content="ABDOULK DIODOI | OFFICIEL">
     <meta property="og:description" content="Rejoignez mon univers : Vidéos, VIP et Paiements Orange Money.">
@@ -16,23 +17,14 @@
     <meta property="og:url" content="https://votre-site.netlify.app">
     <meta property="og:type" content="website">
 
-    <!-- 3. CONFIGURATION APP (PWA) -->
+    <!-- CONFIGURATION APP (PWA) -->
     <link rel="manifest" href="manifest.json">
     <link rel="apple-touch-icon" href="profil.jpg">
 
-    <!-- 4. LIAISON STYLE & ICÔNES -->
+    <!-- LIAISON STYLE & ICÔNES (CORRIGÉ) -->
     <link rel="stylesheet" href="style.css">
+    <!-- Lien complet pour les icônes FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
-    <!-- Ne touche pas à ce qui est déjà là (Title, Charset, Viewport) -->
-    <meta charset="UTF-8">
-    <title>ABDOULK DIODOI | OFFICIEL</title>
-
- <meta name="google-adsense-account" content="ca-pub-2088689215228427">
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2088689215228427"
-     crossorigin="anonymous"></script>
-<script async src="https://pagead2.googlesyndication.com" crossorigin="anonymous"></script>
-
 </head>
 <body>
 
@@ -43,11 +35,11 @@
     <main>
         <!-- CARTE DE PROFIL -->
         <section class="card">
+            <!-- Vérifie que profil.jpg est bien à la racine de ton site -->
             <img src="profil.jpg" alt="Abdoulk Diodoi" class="profile-img">
             <h2 style="color: #03045e;">Abdoulk Diodoi</h2>
             <div style="background:#03045e; color:white; padding:5px 12px; border-radius:20px; font-size:12px; display:inline-block; margin-bottom:15px;">CERTIFIÉ OFFICIEL</div>
             
-            <!-- COORDONNÉES AFFICHÉES -->
             <div style="margin-top: 20px; background: #f9f9f9; padding: 15px; border-radius: 15px; border: 1px solid #ddd;">
                 <p style="margin:5px 0;">📧 Email : <span id="mon-email">nes.zon36@gmail.com</span></p>
                 <p style="margin:5px 0;">📞 Tél : <span id="mon-tel">+226 07 85 71 89</span></p>
@@ -83,12 +75,10 @@
 
     <footer style="margin: 40px 0; font-size: 0.8rem; color: #777;">
         &copy; 2024 ABDOULK DIODOI - Tous droits réservés
-
     </footer>
 
-    <!-- 5. LIAISON DU CERVEAU (SCRIPT.JS) -->
+    <!-- LIAISON DU CERVEAU -->
     <script src="script.js"></script>
 
 </body>
 </html>
-
