@@ -1,18 +1,19 @@
 /* ============================================================
-   CONFIG PERSONNELLE D'ABDOULK DIODOI
+   CONFIG PERSONNELLE D'ABDOULK DIODOI - CORRIGÉE
    ============================================================ */
 const myConfig = {
     user: "nes.zon36",
     host: "gmail.com",
     phone: "+226 07 85 71 89",
-    // LIEN WHATSAPP POUR LE PAIEMENT (MÉTHODE DIRECTE)
+    // Lien corrigé avec ton numéro et un message auto
     orangeLink: "https://wa.me.",
-    shareText: "Regarde le site officiel de Abdoulk Diodoi ! 🔥 "
+    shareText: "Regarde le site officiel de Abdoulk Diodoi ! 🔥 ",
+    vipLink: "https://wa.me" // Remplace par ton lien de groupe si nécessaire
 };
 
 /* --- AFFICHAGE SÉCURISÉ --- */
-window.onload = () => {
-    const fullEmail = myConfig.user + "@" + myConfig.host;
+window.addEventListener('DOMContentLoaded', () => {
+    const fullEmail = `${myConfig.user}@${myConfig.host}`;
     const emailElement = document.getElementById('mon-email');
     const telElement = document.getElementById('mon-tel');
 
@@ -20,31 +21,35 @@ window.onload = () => {
         emailElement.innerHTML = `<a href="mailto:${fullEmail}" style="color:#e91e63; font-weight:bold; text-decoration:none;">${fullEmail}</a>`;
     }
     if(telElement) {
-        telElement.innerHTML = `<a href="tel:${myConfig.phone.replace(/\s/g, '')}" style="color:#e91e63; font-weight:bold; text-decoration:none;">${myConfig.phone}</a>`;
+        // Nettoyage du numéro pour le lien tel: (supprime les espaces)
+        const cleanPhone = myConfig.phone.replace(/\s/g, '');
+        telElement.innerHTML = `<a href="tel:${cleanPhone}" style="color:#e91e63; font-weight:bold; text-decoration:none;">${myConfig.phone}</a>`;
     }
-};
+});
 
-/* --- FONCTION PAIEMENT (Redirige vers ton WhatsApp) --- */
+/* --- FONCTION PAIEMENT --- */
 function payerOrange() {
     if(confirm("Voulez-vous contacter Abdoulk pour régler par Orange Money ?")) {
         window.location.href = myConfig.orangeLink;
     }
 }
 
-/* --- VIRALITÉ WHATSAPP --- */
+/* --- VIRALITÉ WHATSAPP (CORRIGÉE) --- */
 function partagerWA() {
     const currentUrl = window.location.href;
-    window.open(`https://api.whatsapp.com{encodeURIComponent(myConfig.shareText + currentUrl)}`, '_blank');
+    // Utilisation des backticks (`) et de encodeURIComponent pour les caractères spéciaux
+    const shareUrl = `https://api.whatsapp.com{encodeURIComponent(myConfig.shareText + currentUrl)}`;
+    window.open(shareUrl, '_blank');
 }
 
 /* --- INSTALLATION APP (PWA) --- */
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js');
+    navigator.serviceWorker.register('sw.js').catch(err => console.error("Erreur SW:", err));
 }
 
-// Invitation VIP automatique (15 sec)
+/* --- INVITATION VIP AUTO (15 SEC) --- */
 setTimeout(() => {
     if(confirm("Rejoignez mon groupe VIP sur WhatsApp !")) {
-        window.location.href = "https://wa.me";
+        window.location.href = myConfig.vipLink;
     }
 }, 15000);
