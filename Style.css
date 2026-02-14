@@ -5,6 +5,7 @@
     --accent-pink: #e91e63;  
     --text-dark: #03045e;    
     --card-bg: #ffffff;      
+    --om-color: #FF6600; /* Orange Money */
 }
 
 body {
@@ -12,16 +13,17 @@ body {
     background-color: var(--bg);
     color: var(--text-dark);
     margin: 0;
-    line-height: 1.6;
+    padding-bottom: 50px;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    align-items: center;
 }
 
 header {
+    width: 100%;
     background: var(--header-grad);
     color: white;
-    padding: 2.5rem 1rem;
+    padding: 3rem 0 5rem 0; /* Plus d'espace en bas pour le chevauchement */
     text-align: center;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
@@ -30,69 +32,74 @@ header nav strong {
     font-size: 1.8rem;
     letter-spacing: 3px;
     text-transform: uppercase;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 }
 
 main {
-    flex: 1;
-    padding: 20px;
-    max-width: 500px;
-    margin: 0 auto;
     width: 90%;
+    max-width: 450px;
+    margin-top: -60px; /* Fait monter les cartes sur le bleu du header */
 }
 
 .card {
     background: var(--card-bg);
-    padding: 30px;
+    padding: 25px;
     border-radius: 25px;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-    margin-top: -40px; /* Effet de chevauchement sur le header */
-    border: 1px solid rgba(255,255,255,0.3);
-}
-
-/* --- BOUTONS DE PARTAGE (VIRALITÉ) --- */
-.share-container {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
     text-align: center;
-    margin: 20px 0;
-    padding: 15px;
-    background: #fff;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
-.btn-share {
-    display: inline-block;
-    padding: 12px 25px;
-    margin: 5px;
+/* --- STYLE DE L'IMAGE DE PROFIL --- */
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    margin-top: -10px;
+}
+
+/* --- STYLE DES BOUTONS (LIENS) --- */
+.btn-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    padding: 15px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 15px;
+    font-size: 1rem;
+    font-weight: bold;
     color: white;
     text-decoration: none;
-    border-radius: 30px;
-    font-weight: bold;
-    transition: transform 0.2s;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.btn-share:active { transform: scale(0.9); }
-.wa { background-color: #25D366; } 
-.fb { background-color: #1877F2; }
+.btn-link:active { transform: scale(0.96); }
 
-/* --- RESPONSIVE MOBILE --- */
+/* Couleurs spécifiques aux boutons */
+.om { background: var(--om-color); }
+.yt { background: #FF0000; }
+.tg { background: #0088cc; }
+.insta { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+.wa { background: #25D366; width: 100%; margin: 0 auto; }
+
+/* Icônes */
+.btn-link i { font-size: 1.4rem; }
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8rem;
+    color: #777;
+}
+
+/* --- RESPONSIVE --- */
 @media (max-width: 480px) {
-    header nav strong {
-        font-size: 1.4rem;
-    }
-    header {
-        padding: 1.5rem 1rem;
-    }
-    h2 {
-        font-size: 1.5rem;
-    }
-    .card {
-        padding: 20px;
-        margin-top: -20px;
-    }
-    .btn-share {
-        display: block; /* Les boutons prennent toute la largeur sur mobile */
-        width: 100%;
-        box-sizing: border-box;
-    }
+    header nav strong { font-size: 1.4rem; }
+    .card { padding: 20px; }
 }
