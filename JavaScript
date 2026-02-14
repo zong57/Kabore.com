@@ -1,0 +1,33 @@
+/* ============================================================
+   CONFIG DES DONNÉES D'ABDOULK
+   ============================================================ */
+const myConfig = {
+    user: "nes.zon36",
+    host: "gmail.com",
+    phone: "+226 07 85 71 89",
+    orangeLink: "https://votre-lien-orange.com",
+    shareText: "Regarde le site officiel de Abdoulk Diodoi ! 🔥 "
+};
+
+/* --- AFFICHAGE SÉCURISÉ --- */
+window.onload = () => {
+    const fullEmail = myConfig.user + "@" + myConfig.host;
+    document.getElementById('mon-email').innerHTML = `<a href="mailto:${fullEmail}">${fullEmail}</a>`;
+    document.getElementById('mon-tel').innerHTML = `<a href="tel:${myConfig.phone.replace(/\s/g, '')}">${myConfig.phone}</a>`;
+};
+
+/* --- PAIEMENT ORANGE MONEY --- */
+function payerOrange() {
+    window.location.href = myConfig.orangeLink;
+}
+
+/* --- VIRALITÉ WHATSAPP --- */
+function partagerWA() {
+    window.open(`https://api.whatsapp.com{encodeURIComponent(myConfig.shareText + window.location.href)}`);
+}
+
+/* --- INSTALLATION APP --- */
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js');
+}
+
