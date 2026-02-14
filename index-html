@@ -54,9 +54,6 @@
         telBox.innerHTML = '<a href="tel:' + prefixe + suite.replace(/\s/g, '') + '">' + prefixe + suite + '</a>';
     </script>
 
-</body>
-</html>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ABDOULK DIODOI | OFFICIEL</title>
@@ -157,9 +154,6 @@
         document.querySelectorAll('button').forEach(btn => {
             btn.addEventListener('click', () => {
                 alert("Vous avez cliqué sur un bouton de votre site existant !");
-            
-
-
     <title>Mon Site</title>
     <!-- Vos balises Meta d'aperçu vont ici -->
 </head>
@@ -173,10 +167,16 @@
         const domain = "nes.zon36@gmail.com";
         document.getElementById('mon-email').innerHTML = user + "@" + domain;
     </script>
+  
+     <div class="share-container">
+    <p>Partagez ce site pour m'aider !</p>
+    <!-- Bouton WhatsApp (Le plus viral en Afrique) -->
+    <a href="https://api.whatsapp.com ce site incroyable : https://votre-site.com" target="_blank" class="btn-share wa">WhatsApp</a>
     
+    <!-- Bouton Facebook -->
+    <a href="https://www.facebook.com" target="_blank" class="btn-share fb">Facebook</a>
+</div>
 
-</body>
-</html>
 
             });
         });
