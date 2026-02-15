@@ -6,34 +6,45 @@
     <title>Abdoulk Diodoi | Officiel</title>
     <link rel="manifest" href="manifest.json">
     <style>
-        /* Design rapide pour ton Android */
         body { background: #0f0c29; color: white; font-family: sans-serif; text-align: center; padding: 20px; }
-        .profile-img { width: 150px; height: 150px; border-radius: 50%; border: 3px solid #e91e63; margin-bottom: 20px; }
-        .btn { display: block; width: 100%; max-width: 300px; margin: 10px auto; padding: 15px; border: none; border-radius: 25px; font-weight: bold; cursor: pointer; text-decoration: none; }
+        .profile-img { width: 150px; height: 150px; border-radius: 50%; border: 3px solid #e91e63; margin-bottom: 20px; object-fit: cover; box-shadow: 0 0 15px rgba(233, 30, 99, 0.5); }
+        
+        /* Style pour la Bio */
+        .bio-section { background: rgba(255, 255, 255, 0.05); padding: 15px; border-radius: 15px; margin: 20px auto; max-width: 400px; font-size: 0.9em; line-height: 1.5; border: 1px solid rgba(233, 30, 99, 0.3); }
+        
+        .btn { display: block; width: 100%; max-width: 300px; margin: 10px auto; padding: 15px; border: none; border-radius: 25px; font-weight: bold; cursor: pointer; text-decoration: none; transition: 0.3s; font-size: 16px; }
+        .btn:active { transform: scale(0.95); } 
+        
         .btn-orange { background: #ff6600; color: white; }
         .btn-share { background: #25d366; color: white; }
-        a { color: #e91e63; }
+        
+        #mon-email a, #mon-tel a { color: #e91e63; text-decoration: none; font-weight: bold; }
+        hr { border: 0; height: 1px; background: rgba(255,255,255,0.1); margin: 20px 0; }
     </style>
 </head>
 <body>
 
-    <!-- Ton Image -->
     <img src="profil.jpg" alt="Abdoulk Diodoi" class="profile-img">
 
     <h1>Abdoulk Diodoi</h1>
     
-    <!-- Zone d'affichage (script.js remplira ces infos) -->
-    <p>Contact : <span id="mon-tel">Chargement...</span></p>
+    <p>WhatsApp : <span id="mon-tel">Chargement...</span></p>
     <p>Email : <span id="mon-email">Chargement...</span></p>
+
+    <!-- SECTION BIO -->
+    <div class="bio-section">
+        <h2 style="color: #e91e63; margin-top: 0;">À propos de moi</h2>
+        <p>Bienvenue sur ma plateforme officielle ! Je suis <strong>Abdoulk Diodoi</strong>, créateur de contenu passionné au Burkina Faso.</p>
+        <p>Retrouvez ici mes actus, mes services multimédias et l'accès à mon espace VIP exclusif.</p>
+    </div>
 
     <hr>
 
-    <!-- Tes Boutons -->
     <button class="btn btn-orange" onclick="payerOrange()">💳 PAYER PAR ORANGE MONEY</button>
     <button class="btn btn-share" onclick="partagerWA()">🔥 PARTAGER SUR WHATSAPP</button>
 
-    <!-- Inclusion de ton script corrigé -->
-    <script src="script.js"></script>
+    <!-- Correction ici : Appel de ton fichier nommé "JavaScript" -->
+    <script src="JavaScript"></script>
 
 </body>
 </html>
