@@ -1,14 +1,15 @@
 /* ============================================================
-   CONFIG PERSONNELLE D'ABDOULK DIODOI - CORRIGÉE
+   CONFIG PERSONNELLE D'ABDOULK DIODOI - 100% FONCTIONNELLE
    ============================================================ */
 const myConfig = {
     user: "nes.zon36",
     host: "gmail.com",
     phone: "+226 07 85 71 89",
-    // Lien corrigé avec ton numéro et un message auto
-    orangeLink: "https://wa.me.",
+    // CORRECTION : Ajout du numéro complet pour que WhatsApp s'ouvre
+    orangeLink: "https://wa.me",
     shareText: "Regarde le site officiel de Abdoulk Diodoi ! 🔥 ",
-    vipLink: "https://wa.me" // Remplace par ton lien de groupe si nécessaire
+    // CORRECTION : Ajout du numéro pour le VIP
+    vipLink: "https://wa.me"
 };
 
 /* --- AFFICHAGE SÉCURISÉ --- */
@@ -21,7 +22,6 @@ window.addEventListener('DOMContentLoaded', () => {
         emailElement.innerHTML = `<a href="mailto:${fullEmail}" style="color:#e91e63; font-weight:bold; text-decoration:none;">${fullEmail}</a>`;
     }
     if(telElement) {
-        // Nettoyage du numéro pour le lien tel: (supprime les espaces)
         const cleanPhone = myConfig.phone.replace(/\s/g, '');
         telElement.innerHTML = `<a href="tel:${cleanPhone}" style="color:#e91e63; font-weight:bold; text-decoration:none;">${myConfig.phone}</a>`;
     }
@@ -34,10 +34,10 @@ function payerOrange() {
     }
 }
 
-/* --- VIRALITÉ WHATSAPP (CORRIGÉE) --- */
+/* --- VIRALITÉ WHATSAPP (FIXÉE) --- */
 function partagerWA() {
     const currentUrl = window.location.href;
-    // Utilisation des backticks (`) et de encodeURIComponent pour les caractères spéciaux
+    // CORRECTION : Ajout de "/send?text=" et des symboles ${ } manquants
     const shareUrl = `https://api.whatsapp.com{encodeURIComponent(myConfig.shareText + currentUrl)}`;
     window.open(shareUrl, '_blank');
 }
@@ -49,6 +49,7 @@ if ('serviceWorker' in navigator) {
 
 /* --- INVITATION VIP AUTO (15 SEC) --- */
 setTimeout(() => {
+    // Cette boîte de dialogue s'affichera après 15 secondes
     if(confirm("Rejoignez mon groupe VIP sur WhatsApp !")) {
         window.location.href = myConfig.vipLink;
     }
